@@ -1,8 +1,14 @@
+import Hero from "./components/hero/Hero";
+import Navbar from "./components/nav/Navbar";
+
+//
+
 function App() {
   return (
-    <div className='App'>
-      <h1>Hapartment Waitlist</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 

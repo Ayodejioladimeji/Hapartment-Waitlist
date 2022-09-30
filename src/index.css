@@ -1,12 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Roboto:wght@300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #449342;
+  --secondary-color: #234331;
+  --hero-color: #0f1510;
+  --tertiary-color: #9ba5b2;
+  --white-color: #ffffff;
+  --blue-color: #0d4da3;
+  --yellow-color: #c9a207;
+  --green-color: #22583a;
+  --border-color: rgba(157, 165, 178, 0.17);
+
+  /* Font Sizes */
+  --font-small: 11px;
+  --font-smaller: 13px;
+  --font-smallest: 15px;
+  --font-mid: 16px;
+  --font-med: 18px;
+  --font-medium: 20px;
+  --font-big: 22px;
+  --font-bigger: 24px;
+  --font-biggest: 27px;
+  --font-large: 30px;
+  --font-larger: 40px;
+  --font-largest: 49px;
+
+  --box-shadow: 0px 0px 7px rgba(65, 111, 65, 0.2);
+  --shadow: 5px 12px 24px rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: url("./components/assets/background.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  background: url('./components/assets/background.png');
-  background-position: center;
-  background-size: cover;
-  color: white;
 }

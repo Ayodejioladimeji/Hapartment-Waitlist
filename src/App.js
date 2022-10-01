@@ -1,5 +1,6 @@
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/nav/Navbar";
+import React from 'react';
+import Hero from './components/hero/Hero';
+import Navbar from './components/nav/Navbar';
 
 //
 

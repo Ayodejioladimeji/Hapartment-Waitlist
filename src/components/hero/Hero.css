@@ -20,7 +20,7 @@
 }
 
 .hero-center {
-  z-index: 999;
+  z-index: 99;
   /* background: var(--primary-color); */
   color: white;
   display: flex;
@@ -52,7 +52,7 @@
 .hero-left-div p {
   font-size: var(--font-big);
   font-family: 'Lobster Two';
-  width: 70%;
+  width: 80%;
   margin-bottom: 20px;
 }
 

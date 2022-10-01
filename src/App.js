@@ -1,7 +1,8 @@
-import React from 'react';
-import Hero from './components/hero/Hero';
-import Navbar from './components/nav/Navbar';
-import Negotiate from './components/negotiate/Negotiate';
+import React from "react";
+import Enjoy from "./components/enjoy/Enjoy";
+import Hero from "./components/hero/Hero";
+import Navbar from "./components/nav/Navbar";
+import Negotiate from "./components/negotiate/Negotiate";
 
 //
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Negotiate />
+      <Enjoy />
     </>
   );
 }

@@ -16,7 +16,7 @@ const Negotiate = () => {
       <div className='negotiate-center'>
         <div className='negotiate-left'>
           <img src={img1} alt='' />
-          <img src={img2} alt='' />
+          <img src={img2} alt='' className='img2' />
         </div>
 
         <div className='negotiate-right'>

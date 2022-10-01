@@ -1,3 +1,35 @@
 .negotiate {
   height: 100vh;
 }
+
+.negotiate-center {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* negotiate left */
+.negotiate-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.negotiate-left img {
+  width: 300px;
+  height: 300px;
+}
+
+/* negotiate right */
+.negotiate-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.negotiate-right ol li {
+  line-height: 40px;
+  font-family: 'Lobster Two';
+  font-size: var(--font-med);
+}

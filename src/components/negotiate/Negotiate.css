@@ -1,0 +1,45 @@
+.negotiate {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.negotiate-center {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+/* negotiate left */
+.negotiate-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.negotiate-left img {
+  width: 300px;
+  height: 300px;
+}
+
+.negotiate-left .img2 {
+  margin-bottom: -250px;
+  margin-left: -150px;
+}
+
+/* negotiate right */
+.negotiate-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.negotiate-right ol li {
+  line-height: 50px;
+  font-family: "Lobster Two";
+  font-size: var(--font-med);
+  letter-spacing: 2px;
+}

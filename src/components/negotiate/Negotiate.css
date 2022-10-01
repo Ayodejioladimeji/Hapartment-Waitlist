@@ -38,6 +38,7 @@
 
 .negotiate-right ol li {
   line-height: 50px;
-  font-family: 'Lobster Two';
+  font-family: "Lobster Two";
   font-size: var(--font-med);
+  letter-spacing: 2px;
 }

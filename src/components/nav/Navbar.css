@@ -9,6 +9,10 @@
   background: transparent;
 }
 
+.active-nav {
+  background: var(--primary-color);
+}
+
 .nav-brand img {
   height: 100%;
   width: 130px;

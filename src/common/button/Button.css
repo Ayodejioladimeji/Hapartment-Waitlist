@@ -1,6 +1,6 @@
 .button {
   background: var(--primary);
-  padding: 10px;
+  padding: 10px 20px;
   height: 40px;
   border-radius: 25px;
   border: none;
@@ -8,9 +8,10 @@
   cursor: pointer;
   color: var(--white-color);
   border: 2px solid var(--white-color);
-  width: 130px;
   font-weight: 600;
   transition: var(--transition);
+  font-family: "Lobster";
+  letter-spacing: 2px;
 }
 
 .button:hover {

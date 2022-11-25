@@ -2,26 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 15px 40px;
   position: fixed;
   width: 100%;
   z-index: 999;
   background: transparent;
+  transition: var(--transition);
+  /* background: var(--secondary-color); */
 }
 
 .active-nav {
-  background: conic-gradient(
-    from 268.99deg at 101.79% 103.94%,
-    #000000 0deg,
-    rgba(0, 0, 0, 0.989583) 0.04deg,
-    rgba(6, 45, 15, 0.677896) 63.75deg,
-    rgba(11, 85, 28, 0.402723) 120deg,
-    rgba(0, 0, 0, 0.674834) 180deg,
-    rgba(0, 0, 0, 0) 240deg,
-    rgba(6, 45, 15, 0.677896) 299.96deg,
-    rgba(23, 179, 57, 0.402723) 300deg,
-    rgba(64, 128, 78, 0.674834) 360deg
-  );
+  background: var(--primary-color);
+  transition: var(--transition);
 }
 
 .nav-brand img {

@@ -19,7 +19,11 @@ const Hero = () => {
               We help users search for apartment easily and provide them with
               adequate information to help them make well- informed decisions.
             </p>
-            <Button text='Stay updated' />
+            <Button
+              text='Get started'
+              background='var(--primary-color)'
+              border='2px solid var(--white-color)'
+            />
           </div>
         </div>
 

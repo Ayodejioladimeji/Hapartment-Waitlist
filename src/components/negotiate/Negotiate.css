@@ -1,6 +1,7 @@
 .negotiate {
-  height: 100vh;
+  height: 130vh;
   padding-top: 100px;
+  background: var(--hero);
 }
 
 .negotiate-center {
@@ -39,7 +40,6 @@
 
 .negotiate-right ol li {
   line-height: 50px;
-  font-family: "Lobster Two";
   font-size: var(--font-med);
-  letter-spacing: 2px;
+  font-weight: 600;
 }

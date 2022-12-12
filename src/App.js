@@ -1,18 +1,14 @@
-import React from "react";
-import Enjoy from "./components/enjoy/Enjoy";
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/nav/Navbar";
-import Negotiate from "./components/negotiate/Negotiate";
+import React from 'react';
+import Homepage from './pages/Homepage';
+import SEO from './SEO/Seo';
 
 //
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Negotiate />
-      <Enjoy />
+      <SEO title='Homepage' />
+      <Homepage />
     </>
   );
 }

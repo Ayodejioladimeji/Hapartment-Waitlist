@@ -1,0 +1,29 @@
+.how-it-works {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.how-it-works-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-box {
+  background: var(--secondary-color);
+  height: 500px;
+  width: 70%;
+  border-radius: 15px;
+}
+
+/* right section */
+.how-it-works-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,7 +1,6 @@
 .heading {
-  color: var(--white-color);
+  color: var(--secondary-color);
   font-size: var(--font-bigger);
-  font-family: "amarante";
   width: 30%;
   text-align: center;
   margin: 0 auto;

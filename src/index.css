@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amarante&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amarante&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:wght@400;700&display=swap');
 
 :root {
   --primary-color: #449342;
   --secondary-color: #234331;
   --hero-color: #0f1510;
-  --hero: #0f15105b;
+  --hero: #0f15100c;
   --tertiary-color: #9ba5b2;
   --white-color: #ffffff;
   --blue-color: #0d4da3;
@@ -34,10 +34,10 @@
 }
 
 body {
-  background: url("./assets/background.png");
+  /* background: url("./assets/background.png"); */
   background-position: center;
   background-size: cover;
-  color: white;
+  font-family: 'Nunito Sans';
 }
 
 * {

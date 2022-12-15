@@ -1,0 +1,43 @@
+.rent {
+  height: 60vh;
+  background: var(--secondary-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent h1 {
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.rent p {
+  color: var(--white-color);
+  width: 55%;
+  margin: 10px auto;
+  line-height: 25px;
+}
+
+.rent p span {
+  color: var(--primary-color);
+}
+
+.rent button {
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  margin-top: 15px;
+}
+
+.rent button:hover {
+  background: var(--secondary-color);
+  border: 1px solid var(--white-color);
+}

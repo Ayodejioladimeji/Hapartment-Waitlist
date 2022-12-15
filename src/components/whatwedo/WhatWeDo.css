@@ -1,5 +1,6 @@
 .what {
-  padding: 100px 0;
+  padding: 80px 0;
+  background: var(--hero);
 }
 
 .what-center {
@@ -23,12 +24,19 @@
   width: 100%;
 }
 
+.what-left h1 {
+  font-size: var(--font-bigger);
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
 .what-left p {
-  width: 70%;
-  font-size: var(--font-med);
+  width: 80%;
+  font-size: var(--font-mid);
   line-height: 30px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--light-color);
 }
 
 /* ========================= */

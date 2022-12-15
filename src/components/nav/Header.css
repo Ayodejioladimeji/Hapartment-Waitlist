@@ -12,8 +12,8 @@ header {
 }
 
 .navbar.active {
-  background: var(--primary);
-  color: var(--main);
+  background: var(--secondary-color);
+  color: var(--white-color);
   font-weight: bold;
 }
 

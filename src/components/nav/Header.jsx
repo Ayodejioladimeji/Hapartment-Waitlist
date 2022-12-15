@@ -39,11 +39,13 @@ const Header = () => {
         </Link>
       </div>
 
-      <div className='menu' onClick={() => setMenu(!menu)}>
+      {/* <div className='menu' onClick={() => setMenu(!menu)}>
         <BiMenuAltRight />
-      </div>
+      </div> */}
 
-      <ul
+      <button className='giving'>Get started</button>
+
+      {/* <ul
         className='header-link'
         style={styleMenu}
         // onClick={() => setMenu(!menu)}
@@ -100,7 +102,7 @@ const Header = () => {
         <li onClick={() => setMenu(!menu)}>
           <FaTimesCircle className='close-menu' />
         </li>
-      </ul>
+      </ul> */}
     </header>
   );
 };

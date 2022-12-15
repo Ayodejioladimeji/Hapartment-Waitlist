@@ -15,7 +15,6 @@ const Rent = () => {
           home. Check prices, see photo displays, floor plans, amenities, and
           more!
         </p>
-        <p></p>
 
         <button>Explore search</button>
       </div>

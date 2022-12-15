@@ -10,6 +10,7 @@ import SectionTwo from '../components/section-two/SectionTwo';
 import SectionThree from '../components/section-three/SectionThree';
 import SEO from './../SEO/Seo';
 import Rent from '../components/rent/Rent';
+import Footer from '../components/footer/Footer';
 
 //
 const Homepage = () => {
@@ -26,6 +27,7 @@ const Homepage = () => {
       <WhatWeDo />
       <Negotiate />
       <Rent />
+      <Footer />
     </>
   );
 };

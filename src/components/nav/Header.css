@@ -37,7 +37,7 @@ header .header-link a {
   text-transform: uppercase;
   color: var(--white-color);
   font-size: 12px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   text-decoration: none;
   font-weight: 500;
   font-weight: 600;
@@ -67,10 +67,11 @@ header .header-link li:hover {
   outline: none;
   border-radius: 5px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid var(--white-color);
   transition: var(--transition);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .giving:hover {

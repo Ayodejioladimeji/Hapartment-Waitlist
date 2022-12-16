@@ -3,7 +3,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 6rem;
   padding: 50px;
-  margin-bottom: 30px;
   background: var(--secondary-color);
 }
 
@@ -19,11 +18,52 @@
   margin-right: 10px;
   font-size: var(--font-largest);
   color: var(--white-color);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .section-div h3 {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   color: var(--white-color);
   font-size: var(--font-med);
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 1000px) {
+  .section-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 50px 20px;
+    background: var(--secondary-color);
+  }
+}
+
+@media (max-width: 765px) {
+  .section-one {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .section-one {
+    grid-template-columns: 1fr;
+  }
+
+  .section-div h1 {
+    font-size: var(--font-larger);
+  }
+
+  .section-div h3 {
+    font-size: var(--font-mid);
+  }
+}
+
+@media (max-width: 375px) {
+  .section-one {
+    padding: 50px 10px;
+  }
+  .section-div {
+    padding: 10px;
+  }
 }

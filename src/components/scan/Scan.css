@@ -1,0 +1,95 @@
+.scan {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.scan-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-box {
+  background: var(--primary-color);
+  height: 500px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.left-box img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* right section */
+.scan-right {
+  width: 50%;
+}
+
+.scan-right h1 {
+  font-size: var(--font-biggest);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.scan-right h1 span {
+  color: var(--primary-color);
+  font-family: 'Nunito Sans';
+}
+
+.scan-center {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.ios {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ios-image {
+  height: 100%;
+  width: 185px;
+  object-fit: contain;
+}
+
+.appstore-image {
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.android {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.android-image {
+  height: 100%;
+  width: 200px;
+  object-fit: contain;
+}
+
+.playstore-image {
+  width: 160px;
+  height: 100%;
+  object-fit: contain;
+}

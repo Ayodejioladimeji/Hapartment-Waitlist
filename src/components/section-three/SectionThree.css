@@ -1,0 +1,57 @@
+.section-three {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-three-left {
+  width: 50%;
+  padding: 30px;
+}
+
+.section-three-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.section-three-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.section-three-right h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.section-three-right p {
+  color: var(--light-color);
+  margin-bottom: 5px;
+  font-size: var(--font-mid);
+  width: 80%;
+  line-height: 25px;
+}
+
+.section-three-right p span {
+  color: var(--primary-color);
+}
+
+.section-three-right button {
+  padding: 15px 30px;
+  background: var(--secondary-color);
+  color: var(--white-color);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+}
+
+/* section three right */

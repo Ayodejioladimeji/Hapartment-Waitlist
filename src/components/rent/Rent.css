@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .rent h1 {
@@ -17,6 +18,7 @@
   width: 55%;
   margin: 10px auto;
   line-height: 25px;
+  font-size: var(--font-med);
 }
 
 .rent p span {
@@ -26,7 +28,7 @@
 .rent button {
   background: var(--primary-color);
   color: var(--white-color);
-  padding: 13px 30px;
+  padding: 15px 30px;
   border: none;
   outline: none;
   font-family: "Nunito Sans";
@@ -35,10 +37,26 @@
   border: 1px solid transparent;
   transition: var(--transition);
   margin-top: 15px;
-  border-radius: 5px;
+  font-size: var(--font-mid);
 }
 
 .rent button:hover {
   background: var(--secondary-color);
   border: 1px solid var(--white-color);
 }
+
+/* THE RESPONSIVENESS */
+@media (max-width: 900px) {
+  .rent p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .rent h1 {
+    font-size: var(--font-bigger);
+  }
+  .rent p {
+    width: 100%;
+  }
+} ;

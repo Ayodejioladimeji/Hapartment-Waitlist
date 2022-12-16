@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 768px) {
+  .negotiate {
+    height: 100%;
+  }
   .negotiate-center {
     flex-direction: column;
     margin-top: 30px;
@@ -74,9 +77,12 @@
     width: 100%;
   }
 
+  .negotiate-left img {
+    height: 80%;
+  }
+
   .negotiate-right {
     width: 100%;
-    margin-top: 20px;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -86,7 +92,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .negotiate-center {
     padding: 10px;
   }

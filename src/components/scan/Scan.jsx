@@ -29,17 +29,7 @@ const Scan = () => {
         </h1>
         <div className="scan-center">
           <div className="ios">
-            <img src={ios} alt="" className="ios-image" />
-            {/* <img src={appstore} alt='' /> */}
-          </div>
-
-          <div className="android">
-            <img src={android} alt="" className="android-image" />
-          </div>
-        </div>
-
-        <div className="scan-center">
-          <div className="ios">
+            <img src={android} alt="" className="ios-image" />
             <img
               src={appstore}
               alt=""
@@ -49,6 +39,7 @@ const Scan = () => {
           </div>
 
           <div className="android">
+            <img src={android} alt="" className="ios-image" />
             <img
               src={playstore}
               alt=""

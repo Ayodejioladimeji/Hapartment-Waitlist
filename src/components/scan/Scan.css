@@ -2,8 +2,8 @@
   height: 120vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
+  padding: 20px;
 }
 
 .scan-left {
@@ -51,6 +51,7 @@
 .scan-center {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -61,6 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .ios-image {
@@ -74,6 +76,7 @@
   height: 100%;
   object-fit: contain;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .android {
@@ -81,6 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .android-image {
@@ -94,4 +98,63 @@
   height: 100%;
   object-fit: contain;
   cursor: pointer;
+  margin-top: 20px;
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 900px) {
+  .scan-left {
+    justify-content: flex-start;
+  }
+
+  .scan-left {
+    width: 40%;
+  }
+
+  .left-box {
+    width: 90%;
+  }
+
+  .scan-right {
+    width: 60%;
+  }
+
+  .scan-right h1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .scan {
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 20px;
+  }
+  .scan-left {
+    display: none;
+  }
+
+  .scan-right {
+    width: 100%;
+  }
+
+  .scan-right h1 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .scan-right h1 {
+    width: 90%;
+    font-size: var(--font-bigger);
+  }
+
+  .scan-center {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ios {
+    margin-bottom: 50px;
+  }
 }

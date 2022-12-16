@@ -1,6 +1,6 @@
 .rent {
   height: 60vh;
-  background: var(--secondary-color);
+  background: var(--hero);
   text-align: center;
   display: flex;
   align-items: center;
@@ -8,12 +8,12 @@
 }
 
 .rent h1 {
-  color: var(--white-color);
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
 .rent p {
-  color: var(--white-color);
+  color: var(--secondary-color);
   width: 55%;
   margin: 10px auto;
   line-height: 25px;
@@ -29,7 +29,7 @@
   padding: 13px 30px;
   border: none;
   outline: none;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;

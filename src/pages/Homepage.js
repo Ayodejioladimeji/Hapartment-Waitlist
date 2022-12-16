@@ -21,7 +21,7 @@ const Homepage = () => {
       <HeroPage />
       <SectionOne />
       <SectionTwo />
-      {/* <SectionThree /> */}
+      <SectionThree />
       {/* <Enjoy /> */}
       {/* <Scan /> */}
       {/* <WhatWeDo /> */}

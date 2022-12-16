@@ -4,9 +4,10 @@
 }
 
 .negotiate-center {
-  margin-top: 120px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 /* negotiate left */
@@ -15,17 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 70vh;
 }
 
 .negotiate-left img {
-  width: 400px;
-  height: 400px;
-}
-
-.negotiate-left .img2 {
-  margin-bottom: -250px;
-  margin-left: -150px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* negotiate right */
@@ -34,11 +31,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-left: 30px;
+  flex-direction: column;
+}
+
+.negotiate-right h1 {
+  text-align: left;
+  align-self: flex-start;
+  color: var(--primary-color);
 }
 
 .negotiate-right ol li {
   line-height: 50px;
   font-size: var(--font-med);
   font-weight: 600;
+}
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1240px) {
+  .negotiate-center {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  negotiate-left {
+    width: 40%;
+  }
+
+  .negotiate-right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .negotiate-center {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .negotiate-left {
+    width: 100%;
+  }
+
+  .negotiate-right {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .negotiate-right ol li {
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .negotiate-center {
+    padding: 10px;
+  }
+
+  .negotiate-right h1 {
+    font-size: var(--font-bigger);
+  }
 }

@@ -25,7 +25,7 @@ const Homepage = () => {
       <Enjoy />
       <Scan />
       <WhatWeDo />
-      {/* <Negotiate /> */}
+      <Negotiate />
       {/* <Rent /> */}
       {/* <Footer /> */}
     </>

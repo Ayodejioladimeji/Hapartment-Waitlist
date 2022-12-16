@@ -4,10 +4,44 @@ import React from "react";
 import "./Modal.css";
 import banner from "../../assets/banner.png";
 import { FaTimesCircle } from "react-icons/fa";
+import { postDataAPI } from "./../../utils/fetchData";
+import { useToasts } from "react-toast-notifications";
 
 //
 
 const Modal = ({ download, setDownload }) => {
+  const [email, setEmail] = useState("");
+  const { addToast } = useToasts();
+
+  // The handlesubmit method
+  const handleSubmit = async () => {
+    const data = {
+      email,
+    };
+
+    try {
+      if (email === "") {
+        addToast("Please enter your email", {
+          appearance: "error",
+        });
+        return;
+      }
+
+      await postDataAPI("/newsletter/subscribe", data);
+      addToast(
+        "You have been added to our waitlist. Thanks for your interest in us.",
+        {
+          appearance: "success",
+        }
+      );
+      setEmail("");
+    } catch (error) {
+      // console.log(error.response.data.error);
+      addToast(error.response.data.error, { appearance: "error" });
+      setEmail("");
+    }
+  };
+
   return (
     <div className="modalBackground">
       <div className={download ? "modalContainer" : "modalContainers"}>

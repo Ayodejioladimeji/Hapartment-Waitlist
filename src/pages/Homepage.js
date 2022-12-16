@@ -20,7 +20,7 @@ const Homepage = () => {
       <Header />
       <HeroPage />
       <SectionOne />
-      {/* <SectionTwo /> */}
+      <SectionTwo />
       {/* <SectionThree /> */}
       {/* <Enjoy /> */}
       {/* <Scan /> */}

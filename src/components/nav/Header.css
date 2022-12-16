@@ -8,7 +8,8 @@ header {
   position: fixed;
   z-index: 99999;
   padding-left: 15px;
-  padding: 20px;
+  padding: 0 20px;
+  height: 70px;
 }
 
 .navbar.active {
@@ -85,10 +86,10 @@ header .header-link li:hover {
     font-size: 12px;
   }
 
-  header .header-link {
+  /* header .header-link {
     padding: 10px 0;
     display: none;
-  }
+  } */
 
   header .header-link li {
     padding: 0 10px;
@@ -96,7 +97,7 @@ header .header-link li:hover {
 }
 
 @media (max-width: 768px) {
-  header .header-link {
+  /* header .header-link {
     position: fixed;
     top: -17px;
     left: -100%;
@@ -112,7 +113,7 @@ header .header-link li:hover {
     transition: 0.5s ease-in-out;
     padding-top: 60px;
     overflow-y: scroll;
-  }
+  } */
 
   header .menu {
     display: block;
@@ -145,6 +146,8 @@ header .header-link li:hover {
   header .menu {
     margin-right: 8px;
     font-size: 35px;
-    margin-top: 10px;
+  }
+  .giving {
+    font-size: 10px;
   }
 }

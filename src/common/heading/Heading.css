@@ -7,3 +7,21 @@
   line-height: 35px;
   z-index: 99999;
 }
+
+@media (max-width: 1000px) {
+  .heading {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    width: 80%;
+    font-size: var(--font-big);
+  }
+}
+@media (max-width: 350px) {
+  .heading {
+    width: 100%;
+  }
+}

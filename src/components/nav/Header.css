@@ -151,3 +151,9 @@ header .header-link li:hover {
     font-size: 10px;
   }
 }
+
+@media (max-width: 250px) {
+  .giving {
+    display: none;
+  }
+}

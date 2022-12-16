@@ -22,7 +22,7 @@ const Homepage = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-      {/* <Enjoy /> */}
+      <Enjoy />
       {/* <Scan /> */}
       {/* <WhatWeDo /> */}
       {/* <Negotiate /> */}

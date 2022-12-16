@@ -6,7 +6,7 @@
 
 .enjoy h1 {
   color: var(--white-color);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-size: var(--font-bigger);
   text-align: center;
 }
@@ -16,8 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   margin: 100px auto;
+  padding: 0 10px;
+  flex-wrap: wrap;
 }
 
 .enjoy-box {
@@ -69,4 +71,36 @@
   font-size: var(--font-smallest);
   color: var(--white-color);
   font-weight: 500;
+}
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1240px) {
+  .enjoy {
+    padding: 80px 0;
+  }
+
+  .enjoy h1 {
+    font-size: var(--font-bigger);
+  }
+
+  .enjoy-center {
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+
+@media (max-width: 920px) {
+  .enjoy-box {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .enjoy h1 {
+    font-size: var(--font-big);
+  }
+
+  .enjoy-box {
+    padding: 40px 10px;
+  }
 }

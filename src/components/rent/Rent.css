@@ -47,6 +47,9 @@
 
 /* THE RESPONSIVENESS */
 @media (max-width: 900px) {
+  .rent {
+    height: 80vh;
+  }
   .rent p {
     width: 80%;
   }
@@ -59,4 +62,10 @@
   .rent p {
     width: 100%;
   }
-} ;
+}
+
+@media (max-width: 325px) {
+  .rent {
+    height: 100vh;
+  }
+}

@@ -1,42 +1,43 @@
-import React from 'react';
+import React from "react";
 
 // PACKAGES
 // import { Link } from "react-router-dom";
-import HeroSlider, { Slide, MenuNav, Overlay } from 'hero-slider';
-import './HeroPage.css';
-import SEO from '../../SEO/Seo';
+import HeroSlider, { Slide, MenuNav, Overlay } from "hero-slider";
+import "./HeroPage.css";
+import SEO from "../../SEO/Seo";
 
 // Images
 const one =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670422564/Hapartment/219983878_itbheu.jpg';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205940/Hapartment/14-Beautiful-houses-in-nigeria-1024x640_ik12g2.jpg";
+
 const two =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670422585/Hapartment/4-bedroom-bungalow-hp1-1-1024x652_bfhco4.webp';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205940/Hapartment/42c745b7-3fa1-4571-ad1a-91497ba78a23_jcotvl.webp";
 const three =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670423496/Hapartment/11480194_engenp_jpeg11814bf23e46cb133b2f99d798862dc4_efzgmz.jpg';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205940/Hapartment/63044074_tb8teb.jpg";
 const four =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670423487/Hapartment/Lekki_ce0r2m.jpg';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205941/Hapartment/219983878_lnmjox.jpg";
 const five =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670423481/Hapartment/vllkyt5cpcmh3k7jq_gigzxc.jpg';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205940/Hapartment/6-bedroom-bungalow-hp2-1024x652_mygn0j.webp";
 const six =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670423479/Hapartment/fa1b6508-3cf1-47cc-9be5-68121306ece9_images_65_kjrnw4.avif';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205940/Hapartment/1170293_jpp_jpg433832b8edeb34839d7445cc275f6ae0_nswkkm.jpg";
 const seven =
-  'https://res.cloudinary.com/dxftt00aj/image/upload/v1670423506/Hapartment/6-bedroom-bungalow-hp2-1024x652_qzlwvq.webp';
+  "https://res.cloudinary.com/hapartment/image/upload/v1671205941/Hapartment/b15f4b32_z_adgolw.webp";
 
 const HeroPage = () => {
   return (
     <>
-      <SEO title='Homepage' />
+      <SEO title="Homepage" />
       <HeroSlider
-        slidingAnimation='top_to_bottom'
-        orientation='horizontal'
+        slidingAnimation="top_to_bottom"
+        orientation="horizontal"
         initialSlide={1}
         onBeforeChange={(previousSlide, nextSlide) =>
-          console.log('onBeforeChange', previousSlide, nextSlide)
+          console.log("onBeforeChange", previousSlide, nextSlide)
         }
-        onChange={(nextSlide) => console.log('onChange', nextSlide)}
-        onAfterChange={(nextSlide) => console.log('onAfterChange', nextSlide)}
+        onChange={(nextSlide) => console.log("onChange", nextSlide)}
+        onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
         style={{
-          backgroundColor: '#000',
+          backgroundColor: "#000",
         }}
         settings={{
           slidingDuration: 900,
@@ -44,13 +45,13 @@ const HeroPage = () => {
           shouldAutoplay: true,
           shouldDisplayButtons: false,
           autoplayDuration: 3000,
-          height: '100vh',
+          height: "100vh",
           isSmartSliding: true,
         }}
       >
-        <Overlay className='overlay-container'>
-          <div className='wrapper'>
-            <div className='wrapper-box'>
+        <Overlay className="overlay-container">
+          <div className="wrapper">
+            <div className="wrapper-box">
               {/* <div className='subtitle'>
               <Typewriter
                 options={{
@@ -61,7 +62,7 @@ const HeroPage = () => {
               />
             </div> */}
 
-              <div className='title'>
+              <div className="title">
                 <h1>
                   Easy <span>way</span> to find a perfect <span>home</span>
                 </h1>
@@ -78,75 +79,75 @@ const HeroPage = () => {
 
         <Slide
           shouldRenderMask
-          label='BRIDGING'
+          label="BRIDGING"
           background={{
             //   backgroundColor: '#000',
             backgroundImageSrc: one,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='THE'
+          label="THE"
           background={{
             //   backgroundColor: '#8A8A8A',
             backgroundImageSrc: two,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='GAP'
+          label="GAP"
           background={{
             //   backgroundColor: '#EA2329',
             backgroundImageSrc: three,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='BETWEEN'
+          label="BETWEEN"
           background={{
             //   backgroundColor: '#2D7791',
             backgroundImageSrc: four,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='LANDLORDS'
+          label="LANDLORDS"
           background={{
             //   backgroundColor: '#2D7791',
             backgroundImageSrc: five,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='AND'
+          label="AND"
           background={{
             //   backgroundColor: '#2D7791',
             backgroundImageSrc: six,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
         <Slide
           shouldRenderMask
-          label='TENANTS'
+          label="TENANTS"
           background={{
             //   backgroundColor: '#2D7791',
             backgroundImageSrc: seven,
-            backgroundAnimation: 'zoom',
+            backgroundAnimation: "zoom",
           }}
         />
 
-        <MenuNav style={{ color: 'blue' }} />
+        <MenuNav style={{ color: "blue" }} />
       </HeroSlider>
     </>
   );

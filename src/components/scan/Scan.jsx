@@ -59,7 +59,7 @@ const Scan = () => {
         </div>
       </div>
 
-      {download && <Modal />}
+      {download && <Modal download={download} setDownload={setDownload} />}
     </div>
   );
 };

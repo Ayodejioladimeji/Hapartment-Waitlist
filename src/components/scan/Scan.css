@@ -45,7 +45,7 @@
 
 .scan-right h1 span {
   color: var(--primary-color);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 
 .scan-center {
@@ -73,6 +73,7 @@
   width: 150px;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .android {
@@ -92,4 +93,5 @@
   width: 160px;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }

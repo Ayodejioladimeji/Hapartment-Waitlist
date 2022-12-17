@@ -30,7 +30,7 @@ const Footer = () => {
         </a>
 
         <a
-          href='https://www.linkedin.com/company/verifibiz/'
+          href='https://www.linkedin.com/in/hapartment-rentals'
           target='_blank'
           rel='noreferrer'
         >

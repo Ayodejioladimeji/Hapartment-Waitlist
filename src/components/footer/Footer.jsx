@@ -6,26 +6,29 @@ const Footer = () => {
     <div className='footer'>
       <div className='social-icons'>
         <a
-          href='https://www.facebook.com/Verifibiz-africa-103840109119649/'
+          href='https://www.facebook.com/profile.php?id=100085724386292&mibextid=ZbWKwL'
           target='_blank'
           rel='noreferrer'
         >
           <i className='fa fa-facebook-square' aria-hidden='true'></i>
         </a>
+
         <a
-          href='https://www.instagram.com/verifibiz_africa/'
+          href='https://www.instagram.com/invites/contact/?i=1pqlgg45pg0nl&utm_content=pldblyb'
           target='_blank'
           rel='noreferrer'
         >
           <i className='fa fa-instagram' aria-hidden='true'></i>
         </a>
+
         <a
-          href='https://www.instagram.com/verifibiz_africa/'
+          href='https://twitter.com/Hapartment11?t=cmOAR5aAypWeGzbLvebt-A&s=09'
           target='_blank'
           rel='noreferrer'
         >
           <i className='fa fa-twitter-square' aria-hidden='true'></i>
         </a>
+
         <a
           href='https://www.linkedin.com/company/verifibiz/'
           target='_blank'

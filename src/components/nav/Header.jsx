@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 // PACKAGES
-import { BiMenuAltRight } from 'react-icons/bi';
-import { FaTimesCircle } from 'react-icons/fa';
+// import { BiMenuAltRight } from 'react-icons/bi';
+// import { FaTimesCircle } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 // IMAGES
@@ -12,7 +12,7 @@ import logo from '../../assets/logo.png';
 import './Header.css';
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  // const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
   // Changing the navbar color on scroll
@@ -27,9 +27,9 @@ const Header = () => {
   window.addEventListener('scroll', changeBackground);
 
   // THE SECTION OF THE STYLE MENU
-  const styleMenu = {
-    left: menu ? 0 : '-100%',
-  };
+  // const styleMenu = {
+  //   left: menu ? 0 : '-100%',
+  // };
 
   return (
     <header className={navbar ? 'navbar active' : 'navbar'}>

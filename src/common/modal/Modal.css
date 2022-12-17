@@ -29,6 +29,7 @@
 
 .modal-left {
   width: 50%;
+  background: var(--secondary-color);
   /* padding: 20px; */
 }
 

@@ -13,36 +13,30 @@
   z-index: 9999999999999999999999999999999999999999999999;
 }
 
-.modalContainer {
-  background: var(--white-color);
-  box-shadow: var(--shadoos);
+.main-container {
   animation: slideUp 0.6s ease-in-out 0.6s forwards;
   animation-delay: 0.1s;
   opacity: 0;
-  height: 300px;
-  width: 60%;
-  display: flex;
+  width: 80%;
+  background: orange;
 }
 
-.modalContainers {
+.modalContainer {
   background: var(--white-color);
-  box-shadow: var(--shadoos);
-  animation: slideDown 0.6s ease-in-out 0.6s forwards;
-  animation-delay: 0.1s;
-  opacity: 0;
-  height: 300px;
-  width: 60%;
+  width: 100%;
   display: flex;
 }
 
 .modal-left {
   width: 50%;
+  /* padding: 20px; */
 }
 
 .modal-left img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  /* padding: 10px; */
 }
 
 .modal-right {
@@ -91,7 +85,7 @@
 }
 
 .modal-right small {
-  font-size: var(--font-small);
+  font-size: var(--font-smaller);
   margin-top: 20px;
   display: block;
 }
@@ -135,3 +129,68 @@
     width: 90%;
   }
 } */
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1500px) {
+  .main-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .main-container {
+    width: 97%;
+  }
+}
+
+@media (max-width: 950px) {
+  .main-container {
+    width: 60%;
+  }
+  .modalContainer {
+    flex-direction: column;
+  }
+
+  .modal-left {
+    width: 100%;
+  }
+
+  .modal-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 80%;
+  }
+
+  .modal-right h3 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    width: 95%;
+  }
+  .modal-right h3 {
+    width: 90%;
+  }
+
+  .modal-right {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 325px) {
+  modal-right h3 {
+    width: 100%;
+  }
+}

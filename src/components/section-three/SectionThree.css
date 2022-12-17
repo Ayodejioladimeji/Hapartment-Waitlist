@@ -107,6 +107,10 @@
   .section-three-right h1 {
     font-size: var(--font-biggest);
   }
+
+  .section-three-right button {
+    font-size: var(--font-mid);
+  }
 }
 
 @media (max-width: 375px) {

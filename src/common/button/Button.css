@@ -8,10 +8,16 @@
   color: var(--white-color);
   font-weight: 600;
   transition: var(--transition);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-weight: 600;
 }
 
 .button:hover {
   background: var(--primary-color);
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: var(--font-mid);
+  }
 }

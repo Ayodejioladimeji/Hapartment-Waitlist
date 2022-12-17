@@ -62,6 +62,11 @@ const Modal = ({ download, setDownload }) => {
               house ? List your property on Hapartment and get it occupied in
               just few days.
             </small>
+
+            <FaTimesCircle
+              className="cancels"
+              onClick={() => setDownload(false)}
+            />
           </div>
 
           <FaTimesCircle

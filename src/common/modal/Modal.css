@@ -18,7 +18,7 @@
   animation-delay: 0.1s;
   opacity: 0;
   width: 80%;
-  background: orange;
+  /* overflow: auto; */
 }
 
 .modalContainer {
@@ -97,6 +97,16 @@
   font-size: var(--font-med);
   cursor: pointer;
   color: var(--primary-color);
+}
+
+.cancels {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: var(--font-med);
+  cursor: pointer;
+  color: var(--primary-color);
+  display: none;
 }
 
 /* ANIMATION SECTION */
@@ -186,10 +196,19 @@
 
   .modal-right {
     padding: 20px 10px;
+    position: relative;
+  }
+
+  .cancel {
+    display: none;
+  }
+
+  .cancels {
+    display: block;
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   modal-right h3 {
     width: 100%;
   }

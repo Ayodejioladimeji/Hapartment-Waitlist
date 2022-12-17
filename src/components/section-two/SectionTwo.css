@@ -97,6 +97,10 @@
 }
 
 @media (max-width: 500px) {
+  .section-two-left button {
+    font-size: var(--font-mid);
+  }
+
   .section-two-right {
     padding: 10px;
   }

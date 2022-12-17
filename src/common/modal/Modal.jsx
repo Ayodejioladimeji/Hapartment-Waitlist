@@ -12,9 +12,12 @@ import { useToasts } from "react-toast-notifications";
 const Modal = ({ download, setDownload }) => {
   const [email, setEmail] = useState("");
   const { addToast } = useToasts();
+  const [loading, setLoading] = useState(false);
 
   // The handlesubmit method
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     const data = {
       email,
     };
@@ -27,7 +30,9 @@ const Modal = ({ download, setDownload }) => {
         return;
       }
 
-      await postDataAPI("/newsletter/subscribe", data);
+      setLoading(true);
+
+      await postDataAPI("/newsletter", data);
       addToast(
         "You have been added to our waitlist. Thanks for your interest in us.",
         {
@@ -35,10 +40,13 @@ const Modal = ({ download, setDownload }) => {
         }
       );
       setEmail("");
+      setLoading(false);
+      setDownload(false);
     } catch (error) {
-      // console.log(error.response.data.error);
-      addToast(error.response.data.error, { appearance: "error" });
+      // console.log(error.response);
+      addToast(error.response.data.msg, { appearance: "error" });
       setEmail("");
+      setLoading(false);
     }
   };
 
@@ -54,8 +62,15 @@ const Modal = ({ download, setDownload }) => {
             <h3>Our mobile app is still under development</h3>
             <p>Kindly drop your email so we can alert you when we launch</p>
 
-            <input type="text" placeholder="Enter your email here" />
-            <button>Subscribe</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Enter your email here"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button>{loading ? "Please wait ...." : "Subscribe"}</button>
+            </form>
 
             <small>
               Are you looking for prospective tenants to occupy your vacant

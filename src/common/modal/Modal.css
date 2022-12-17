@@ -10,7 +10,7 @@
   align-items: center;
   background: rgba(17, 15, 15, 0.493);
   overflow: auto;
-  z-index: 9999999999999999999999999999999999999999999999;
+  z-index: 999;
 }
 
 .main-container {

@@ -12,8 +12,6 @@ import Modal from "./../../common/modal/Modal";
 const Scan = () => {
   const [download, setDownload] = useState(false);
 
-  console.log(download);
-
   //
   return (
     <div className="scan">

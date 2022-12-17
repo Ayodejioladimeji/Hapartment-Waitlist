@@ -10,6 +10,7 @@
   transition: var(--transition);
   font-family: "Nunito Sans";
   font-weight: 600;
+  border-radius: 10px;
 }
 
 .button:hover {

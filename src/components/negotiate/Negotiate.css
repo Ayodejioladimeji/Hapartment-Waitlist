@@ -94,6 +94,9 @@
 
 @media (max-width: 500px) {
   .negotiate-right h1 {
-    font-size: var(--font-bigger);
+    font-size: var(--font-big);
+  }
+  .negotiate-right ol li {
+    font-size: var(--font-mid);
   }
 }

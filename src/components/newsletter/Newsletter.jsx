@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // COMPONENTS
-import './Modal.css';
+import './Newsletter.css';
 import banner from '../../assets/banner.png';
 import { FaTimesCircle } from 'react-icons/fa';
 import { postDataAPI } from './../../utils/fetchData';
@@ -9,7 +9,7 @@ import { useToasts } from 'react-toast-notifications';
 
 //
 
-const Modal = ({ download, setDownload }) => {
+const Newsletter = ({ download, setDownload }) => {
   const [email, setEmail] = useState('');
   const { addToast } = useToasts();
   const [loading, setLoading] = useState(false);
@@ -94,4 +94,4 @@ const Modal = ({ download, setDownload }) => {
   );
 };
 
-export default Modal;
+export default Newsletter;

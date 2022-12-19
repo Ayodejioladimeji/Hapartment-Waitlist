@@ -135,10 +135,10 @@
 
 /* The media query */
 /* @media screen and (min-width: 1000px) {
-  .modalContainer {
-    width: 90%;
-  }
-} */
+    .modalContainer {
+      width: 90%;
+    }
+  } */
 
 /* THE RESPONSIVENESS */
 @media (min-width: 1500px) {

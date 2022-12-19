@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 
 // PACKAGES
 // import { BiMenuAltRight } from 'react-icons/bi';
@@ -43,7 +44,9 @@ const Header = () => {
         <BiMenuAltRight />
       </div> */}
 
-      <button className='giving'>Get started</button>
+      <button onClick={() => Navigate('/newsletter')} className='giving'>
+        Get started
+      </button>
 
       {/* <ul
         className='header-link'

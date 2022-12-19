@@ -12,6 +12,7 @@ import SEO from "./../SEO/Seo";
 import Rent from "../components/rent/Rent";
 import Footer from "../components/footer/Footer";
 import Faqs from "../components/faqs/Faqs";
+import SafetyTips from "../components/safetytips/SafetyTips";
 
 //
 const Homepage = () => {
@@ -29,6 +30,7 @@ const Homepage = () => {
       <Negotiate />
       <Rent />
       <Faqs />
+      <SafetyTips />
       <Footer />
     </>
   );

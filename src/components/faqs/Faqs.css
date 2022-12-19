@@ -12,7 +12,8 @@
 .faqs-left {
   width: 50%;
   border-right: 1px solid var(--hero);
-  padding: 0 70px;
+  padding: 0 20px;
+  height: 70vh;
 }
 .faqs-left h1 {
   margin-bottom: 20px;
@@ -22,11 +23,52 @@
 
 .faqs-right {
   width: 50%;
-  padding: 0 70px;
+  padding: 0 20px;
+  height: 70vh;
 }
 
 .faqs-right h1 {
   margin-bottom: 20px;
   font-size: var(--font-big);
   color: var(--primary-color);
+}
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1200px) {
+  .faqs-left {
+    padding: 0 70px;
+  }
+  .faqs-right {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqs {
+    padding: 70px 10px;
+  }
+  .faqs-div {
+    flex-direction: column;
+    margin-top: 130px;
+  }
+
+  .faqs-left {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+  .faqs-right {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .faqs-left {
+    padding: 0px;
+  }
+  .faqs-right {
+    padding: 0px;
+  }
 }

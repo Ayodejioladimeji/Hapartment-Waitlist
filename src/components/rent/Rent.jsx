@@ -12,7 +12,7 @@ const Rent = () => {
         <p>
           Discover a place that checks all of your boxes. Filter your rental
           search, and find exactly what you’re looking for.{" "}
-          <span>Hapartment.org</span> makes it easy for you to find your perfect
+          <span>Hapartment</span> makes it easy for you to find your perfect
           home. Check prices, see photo displays, floor plans, amenities, and
           more!
         </p>

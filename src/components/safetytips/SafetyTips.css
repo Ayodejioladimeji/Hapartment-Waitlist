@@ -1,0 +1,29 @@
+.tips {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.tips-center {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  box-shadow: var(--shadow);
+}
+
+.tips p {
+  line-height: 30px;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .tips-center {
+    width: 100%;
+    padding: 40px 10px;
+  }
+}

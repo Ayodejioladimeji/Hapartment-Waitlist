@@ -9,19 +9,19 @@
   padding: 0 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .heading {
     width: 50%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .heading {
     width: 90%;
     font-size: var(--font-big);
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .heading {
     width: 100%;
   }

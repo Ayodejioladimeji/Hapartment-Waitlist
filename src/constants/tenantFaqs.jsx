@@ -22,7 +22,7 @@ export const tenantFaqs = [
     id: 4,
     heading: "Does Hapartment have a mobile app?",
     subheading:
-      "Yes! you can search and download our app from playstore or applestore. You can search for apartments from your mobile phone, tablests, or iphones.",
+      "Yes! you can search and download our app from playstore or applestore. You can explore our listings from your mobile phone, tablets, or iphones.",
   },
   {
     id: 5,

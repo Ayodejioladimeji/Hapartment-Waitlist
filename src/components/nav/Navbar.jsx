@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-// import logo
-import logo from '../../assets/logo.png';
-import logo2 from '../../assets/logo2.png';
-import { Link } from 'react-scroll';
-import './Navbar.css';
-import Button from '../../common/button/Button';
+// PACKAGES
+// import { BiMenuAltRight } from 'react-icons/bi';
+// import { FaTimesCircle } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
-//
+// IMAGES
+import logo from "../../assets/logo.png";
+
+// COMPONENTS
+import "./Navbar.css";
 
 const Navbar = () => {
+  // const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const navigate = useNavigate();
 
   // Changing the navbar color on scroll
   const changeBackground = () => {
@@ -21,30 +26,88 @@ const Navbar = () => {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener("scroll", changeBackground);
+
+  // THE SECTION OF THE STYLE MENU
+  // const styleMenu = {
+  //   left: menu ? 0 : '-100%',
+  // };
 
   return (
-    <div className={navbar ? 'active-nav nav' : 'nav'}>
-      <div className='nav-brand'>
-        <img src={logo} alt='brand-logo' />
-      </div>
-
-      <div className='nav-button'>
-        <Link
-          to='newsletter'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <Button
-            text='Join waitlist'
-            background='var(--primary-color)'
-            border='2px solid var(--white-color)'
-          />
+    <header className={navbar ? "navbar active" : "navbar"}>
+      <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="logo" />
         </Link>
       </div>
-    </div>
+
+      {/* <div className='menu' onClick={() => setMenu(!menu)}>
+        <BiMenuAltRight />
+      </div> */}
+
+      <button onClick={() => navigate("/subscribe")} className="giving">
+        Get started
+      </button>
+
+      {/* <ul
+        className='header-link'
+        style={styleMenu}
+        // onClick={() => setMenu(!menu)}
+      >
+        <li onClick={() => setMenu(!menu)}>
+          <Link
+            to='newsletter'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className='link'
+          >
+            Home
+          </Link>
+        </li>
+        <li onClick={() => setMenu(!menu)}>
+          <Link
+            to='newsletter'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className='link'
+          >
+            Services
+          </Link>
+        </li>
+        <li onClick={() => setMenu(!menu)}>
+          <Link
+            to='newsletter'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className='link'
+          >
+            How-It-Works
+          </Link>
+        </li>
+        <li onClick={() => setMenu(!menu)}>
+          <Link
+            to='newsletter'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className='link'
+          >
+            Faqs
+          </Link>
+        </li>
+
+        <li onClick={() => setMenu(!menu)}>
+          <FaTimesCircle className='close-menu' />
+        </li>
+      </ul> */}
+    </header>
   );
 };
 

@@ -1,16 +1,13 @@
 .modalBackground {
   width: 100vw;
   height: 100vh;
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(17, 15, 15, 0.493);
   overflow: auto;
-  z-index: 999;
 }
 
 .main-container {
@@ -18,7 +15,8 @@
   animation-delay: 0.1s;
   opacity: 0;
   width: 80%;
-  /* overflow: auto; */
+
+  border: 1px solid var(--primary-color);
 }
 
 .modalContainer {
@@ -160,6 +158,10 @@
 }
 
 @media (max-width: 950px) {
+  .modalBackground {
+    height: 120vh;
+    width: 100%;
+  }
   .main-container {
     width: 60%;
   }

@@ -1,16 +1,18 @@
-import React from 'react';
-import './SectionThree.css';
-import apartment from '../../assets/apartment2.png';
-import Button from './../../common/button/Button';
+import React from "react";
+import "./SectionThree.css";
+import apartment from "../../assets/apartment2.png";
+import Button from "./../../common/button/Button";
+import { useNavigate } from "react-router-dom";
 
 const SectionThree = () => {
+  const navigate = useNavigate();
   return (
-    <div className='section-three'>
-      <div className='section-three-left'>
-        <img src={apartment} alt='' />
+    <div className="section-three">
+      <div className="section-three-left">
+        <img src={apartment} alt="" />
       </div>
 
-      <div className='section-three-right'>
+      <div className="section-three-right">
         <h1>Rent your next apartment</h1>
         <p>
           Search and find vacant apartments near you - it's easy as
@@ -23,7 +25,11 @@ const SectionThree = () => {
           your ideal home on <span>Hapartment</span> is a breeze!
         </p>
 
-        <Button text='Explore apartments' background='var(--secondary-color)' />
+        <Button
+          onClick={() => navigate("/subscribe")}
+          text="Explore apartments"
+          background="var(--secondary-color)"
+        />
       </div>
     </div>
   );

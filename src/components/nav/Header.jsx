@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // PACKAGES
 // import { BiMenuAltRight } from 'react-icons/bi';
 // import { FaTimesCircle } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 // IMAGES
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 // COMPONENTS
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   // const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const navigate = useNavigate();
 
   // Changing the navbar color on scroll
   const changeBackground = () => {
@@ -25,7 +26,7 @@ const Header = () => {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener("scroll", changeBackground);
 
   // THE SECTION OF THE STYLE MENU
   // const styleMenu = {
@@ -33,10 +34,10 @@ const Header = () => {
   // };
 
   return (
-    <header className={navbar ? 'navbar active' : 'navbar'}>
-      <div className='logo'>
-        <Link to='/'>
-          <img src={logo} alt='logo' />
+    <header className={navbar ? "navbar active" : "navbar"}>
+      <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="logo" />
         </Link>
       </div>
 
@@ -44,7 +45,7 @@ const Header = () => {
         <BiMenuAltRight />
       </div> */}
 
-      <button onClick={() => Navigate('/newsletter')} className='giving'>
+      <button onClick={() => navigate("/subscribe")} className="giving">
         Get started
       </button>
 

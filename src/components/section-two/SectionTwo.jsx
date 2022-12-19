@@ -3,7 +3,9 @@ import "./SectionTwo.css";
 import apartment from "../../assets/apartment1.jpg";
 import Button from "../../common/button/Button";
 
+//
 const SectionThree = () => {
+  //
   return (
     <div className="section-two">
       <div className="section-two-left">

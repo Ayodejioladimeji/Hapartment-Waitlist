@@ -1,8 +1,14 @@
-import React from 'react';
-import './Button.css';
+import React from "react";
+import "./Button.css";
+import { useNavigate } from "react-router-dom";
 
 const Button = ({ text, background, border }) => {
-  return <button className='button'>{text}</button>;
+  const navigate = useNavigate();
+  return (
+    <button className="button" onClick={() => navigate("/subscribe")}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;

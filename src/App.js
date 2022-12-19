@@ -1,16 +1,14 @@
-import React from 'react';
-import Homepage from './pages/Homepage';
-import { ToastProvider } from 'react-toast-notifications';
-import Newsletter from './pages/Newsletter';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./routes/Router";
 
 //
 
 function App() {
   return (
-    <ToastProvider autoDismissTimeout={5000} autoDismiss={true}>
-      <Homepage />
-      <Newsletter />
-    </ToastProvider>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 // COMPONENTS
 import "./Newsletter.css";
 import banner from "../../assets/banner.png";
-import { FaTimesCircle } from "react-icons/fa";
 import { postDataAPI } from "./../../utils/fetchData";
 import { useToasts } from "react-toast-notifications";
 
@@ -77,11 +76,6 @@ const Newsletter = ({ download, setDownload }) => {
               house ? List your property on Hapartment and get it occupied in
               just few days.
             </small>
-
-            <FaTimesCircle
-              className="cancels"
-              onClick={() => setDownload(false)}
-            />
           </div>
         </div>
       </div>

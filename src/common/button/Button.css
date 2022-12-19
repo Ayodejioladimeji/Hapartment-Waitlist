@@ -1,7 +1,7 @@
 .button {
   background: var(--secondary-color);
-  padding: 10px 20px;
   height: 50px;
+  padding: 0 20px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -11,6 +11,9 @@
   font-family: "Nunito Sans";
   font-weight: 600;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {

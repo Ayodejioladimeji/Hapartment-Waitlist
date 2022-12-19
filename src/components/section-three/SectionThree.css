@@ -100,17 +100,21 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .section-three-left {
     padding: 10px;
   }
 
   .section-three-right h1 {
-    font-size: var(--font-biggest);
+    font-size: var(--font-bigger);
+  }
+
+  .section-three-right p {
+    font-size: var(--font-smallest);
   }
 
   .section-three-right button {
-    font-size: var(--font-mid);
+    font-size: var(--font-smallest);
   }
 }
 

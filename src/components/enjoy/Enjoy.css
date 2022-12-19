@@ -6,7 +6,7 @@
 
 .enjoy h1 {
   color: var(--white-color);
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   font-size: var(--font-bigger);
   text-align: center;
 }
@@ -96,9 +96,9 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .enjoy h1 {
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
   }
 
   .enjoy-box {

@@ -6,7 +6,6 @@
 .faqs-div {
   display: flex;
   align-items: center;
-  margin-top: 90px;
 }
 
 .faqs-left {
@@ -16,7 +15,7 @@
   height: 70vh;
 }
 .faqs-left h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: var(--font-big);
   color: var(--primary-color);
 }
@@ -28,7 +27,7 @@
 }
 
 .faqs-right h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: var(--font-big);
   color: var(--primary-color);
 }
@@ -47,9 +46,10 @@
   .faqs {
     padding: 70px 10px;
   }
+
   .faqs-div {
     flex-direction: column;
-    margin-top: 130px;
+    margin-top: 80px;
   }
 
   .faqs-left {
@@ -57,14 +57,24 @@
     width: 100%;
     padding: 10px;
   }
+
+  .faqs-left h1 {
+    font-size: var(--font-medium);
+  }
+
   .faqs-right {
     height: 100%;
     width: 100%;
     padding: 10px;
+    margin-top: 20px;
+  }
+
+  .faqs-right h1 {
+    font-size: var(--font-medium);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .faqs-left {
     padding: 0px;
   }

@@ -61,12 +61,17 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .rent h1 {
-    font-size: var(--font-bigger);
+    font-size: var(--font-big);
   }
   .rent p {
     width: 100%;
+    font-size: var(--smallest);
+  }
+
+  .rent button {
+    font-size: var(--font-smallest);
   }
 }
 

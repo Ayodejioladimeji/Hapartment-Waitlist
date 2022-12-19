@@ -3,7 +3,7 @@ export const tenantFaqs = [
     id: 1,
     heading: "How do i apply for rentals",
     subheading:
-      "Always remember that finding a good place is tough, Don't make it tougher by wandering from place to place, download our app and explore for your perfect homes. it is easy and just takes a few minutes.",
+      "Always remember that finding a good place is tough, Don't make it tougher by wandering from place to place, download our app and explore for your perfect homes. It is easy and just takes a few minutes.",
   },
   {
     id: 2,

@@ -28,6 +28,6 @@ export const agentFaqs = [
     id: 5,
     heading: "How do i know if my listing is rejected?",
     subheading:
-      "Once your listing is rejected, an email will be sent to your registered email on our platfrom, as regarding the reason why your listing was rejected and what you should do to fix the error and get your listing approved. Meanwhile such listings will be will be in pending state until it is approved.",
+      "Once your listing is rejected, an email will be sent to your registered email on our platfrom, as regarding the reason why your listing was rejected and what you should do to fix the error and get your listing approved. Meanwhile such listings will be in pending state until it is approved.",
   },
 ];

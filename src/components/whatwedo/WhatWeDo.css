@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .what-center {
     padding: 0 10px;
   }
@@ -97,7 +97,11 @@
     padding-left: 0;
   }
   .what-left h1 {
-    font-size: var(--font-big);
+    font-size: var(--font-medium);
     margin-top: 10px;
+  }
+
+  .what-left p {
+    font-size: var(--font-smallest);
   }
 }

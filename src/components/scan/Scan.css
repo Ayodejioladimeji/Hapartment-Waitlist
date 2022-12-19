@@ -143,10 +143,10 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .scan-right h1 {
     width: 90%;
-    font-size: var(--font-bigger);
+    font-size: var(--font-medium);
   }
 
   .scan-center {

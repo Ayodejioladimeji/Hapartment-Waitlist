@@ -97,9 +97,9 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .section-two-left button {
-    font-size: var(--font-mid);
+    font-size: var(--font-smallest);
   }
 
   .section-two-right {
@@ -111,7 +111,11 @@
   }
 
   .section-two-left h1 {
-    font-size: var(--font-biggest);
+    font-size: var(--font-bigger);
+  }
+
+  .section-two-left p {
+    font-size: var(--font-smallest);
   }
 }
 

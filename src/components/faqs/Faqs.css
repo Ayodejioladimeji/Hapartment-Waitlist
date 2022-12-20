@@ -6,6 +6,7 @@
 .faqs-div {
   display: flex;
   align-items: center;
+  margin-top: 100px;
 }
 
 .faqs-left {

@@ -51,7 +51,11 @@ const HeroPage = () => {
       >
         <Overlay className="overlay-container">
           <div className="wrapper">
-            <div className="wrapper-box">
+            <div
+              className="wrapper-box"
+              data-aos="fade-down"
+              data-aos-once="true"
+            >
               {/* <div className='subtitle'>
               <Typewriter
                 options={{
@@ -63,11 +67,11 @@ const HeroPage = () => {
             </div> */}
 
               <div className="title">
-                <h1>
+                <h1 data-aos="zoom-out" data-aos-once="true">
                   Easy <span>way</span> to find a perfect <span>home</span>
                 </h1>
 
-                <p>
+                <p data-aos="zoom-in" data-aos-once="true">
                   We help users search for apartment easily and provide them
                   with adequate information to help them make well-informed
                   decisions.

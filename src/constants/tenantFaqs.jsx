@@ -14,7 +14,7 @@ export const tenantFaqs = [
 
   {
     id: 3,
-    heading: "Will apartment help me locate a new place to live?",
+    heading: "Will Hapartment help me locate a new place to live?",
     subheading:
       "We basically provide you with the tools to find your perfect place. While we can't give you recommendations about where to live, you can find a perfect home on our platform using our predefined filters with easy navigation.",
   },

@@ -20,8 +20,10 @@ fill vacancies faster."
       <div className="what-center">
         <div className="what-left">
           <div>
-            <h1>The safest & easiest way to search</h1>
-            <p>
+            <h1 data-aos="fade-down" data-aos-once="true">
+              The safest & easiest way to search
+            </h1>
+            <p data-aos="zoom-in" data-aos-once="true">
               Hapartment delivers the safest apartment search experience on both
               web and app. View apartment listings directly from top property
               managers, pricing and availability updated daily, and your
@@ -37,7 +39,7 @@ fill vacancies faster."
         </div>
 
         <div className="what-right">
-          <img src={what} alt="" />
+          <img src={what} alt="" data-aos="zoom-out" data-aos-once="true" />
         </div>
       </div>
     </div>

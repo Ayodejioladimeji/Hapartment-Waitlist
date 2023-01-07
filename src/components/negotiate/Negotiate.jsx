@@ -14,13 +14,15 @@ const Negotiate = () => {
 
       <div className="negotiate-center">
         <div className="negotiate-left">
-          <img src={img1} alt="" />
+          <img src={img1} alt="" data-aos="zoom-out" data-aos-once="true" />
         </div>
 
         <div className="negotiate-right">
           <div>
-            <h1>Quick Tips</h1>
-            <ol>
+            <h1 data-aos="fade-up" data-aos-once="true">
+              Quick Tips
+            </h1>
+            <ol data-aos="fade-down" data-aos-once="true">
               <li>Research rent apartment of your choice.</li>
               <li>Ask if the rent price is open for discussion.</li>
               <li>Highlight your strengths as a tenant.</li>

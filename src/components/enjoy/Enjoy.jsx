@@ -1,21 +1,23 @@
-import React from 'react';
+import React from "react";
 // import Heading from '../../common/heading/Heading';
 
 //
-import './Enjoy.css';
-import service from '../../assets/service.svg';
-import charges from '../../assets/charges.svg';
-import navigation from '../../assets/navigation.svg';
+import "./Enjoy.css";
+import service from "../../assets/service.svg";
+import charges from "../../assets/charges.svg";
+import navigation from "../../assets/navigation.svg";
 
 const Enjoy = () => {
   return (
-    <div className='enjoy'>
-      <h1>What you tend to enjoy</h1>
+    <div className="enjoy">
+      <h1 data-aos="fade-down" data-aos-once="true">
+        What you tend to enjoy
+      </h1>
 
-      <div className='enjoy-center'>
-        <div className='enjoy-box'>
-          <div className='enjoy-box-image blue'>
-            <img src={service} alt='' />
+      <div className="enjoy-center">
+        <div className="enjoy-box" data-aos="zoom-in" data-aos-once="true">
+          <div className="enjoy-box-image blue">
+            <img src={service} alt="" />
           </div>
 
           <h3>Verified Apartments</h3>
@@ -24,9 +26,9 @@ const Enjoy = () => {
           </p>
         </div>
 
-        <div className='enjoy-box'>
-          <div className='enjoy-box-image green'>
-            <img src={charges} alt='' />
+        <div className="enjoy-box" data-aos="zoom-out" data-aos-once="true">
+          <div className="enjoy-box-image green">
+            <img src={charges} alt="" />
           </div>
 
           <h3>Lease Property</h3>
@@ -36,9 +38,9 @@ const Enjoy = () => {
           </p>
         </div>
 
-        <div className='enjoy-box'>
-          <div className='enjoy-box-image yellow'>
-            <img src={navigation} alt='' />
+        <div className="enjoy-box" data-aos="zoom-in" data-aos-once="true">
+          <div className="enjoy-box-image yellow">
+            <img src={navigation} alt="" />
           </div>
 
           <h3>Map Locator</h3>

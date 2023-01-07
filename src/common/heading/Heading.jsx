@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
 //
-import './Heading.css';
+import "./Heading.css";
 
 const Heading = ({ text }) => {
-  return <h3 className='heading'>{text}</h3>;
+  return (
+    <h3 className="heading" data-aos="fade-down" data-aos-once="true">
+      {text}
+    </h3>
+  );
 };
 
 export default Heading;

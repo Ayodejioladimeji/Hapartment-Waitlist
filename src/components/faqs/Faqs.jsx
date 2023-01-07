@@ -17,12 +17,16 @@ const Faqs = () => {
 
       <div className="faqs-div">
         <div className="faqs-left">
-          <h1>Property owners/Agents</h1>
+          <h1 data-aos="fade-up" data-aos-once="true">
+            Property owners/Agents
+          </h1>
           <AccordionAgent />
         </div>
 
         <div className="faqs-right">
-          <h1>Renters/Tenants</h1>
+          <h1 data-aos="fade-up" data-aos-once="true">
+            Renters/Tenants
+          </h1>
           <Accordion />
         </div>
       </div>

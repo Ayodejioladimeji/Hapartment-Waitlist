@@ -5,7 +5,12 @@ import { useNavigate } from "react-router-dom";
 const Button = ({ text, background, border }) => {
   const navigate = useNavigate();
   return (
-    <button className="button" onClick={() => navigate("/subscribe")}>
+    <button
+      data-aos="fade-up"
+      data-aos-once="true"
+      className="button"
+      onClick={() => navigate("/subscribe")}
+    >
       {text}
     </button>
   );

@@ -38,7 +38,7 @@ const Scan = () => {
               alt=""
               className="appstore-image"
               onClick={() => navigate("/subscribe")}
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-once="true"
             />
           </div>
@@ -56,7 +56,7 @@ const Scan = () => {
               alt=""
               className="playstore-image"
               onClick={() => navigate("/subscribe")}
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-once="true"
             />
           </div>

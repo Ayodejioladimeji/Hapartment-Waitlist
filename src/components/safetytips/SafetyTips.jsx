@@ -9,7 +9,7 @@ const SafetyTips = () => {
       <div className="tips-center">
         <Heading text="Safety Tips" />
 
-        <p data-aos="zoom-out" data-aos-once="true">
+        <p data-aos="zoom-in" data-aos-once="true">
           Do not make any inspection fee without seeing the agent and property.
           Only pay Rental fee, Sales fee or any upfront payment after you verify
           the Landlord.

@@ -67,7 +67,7 @@ const HeroPage = () => {
             </div> */}
 
               <div className="title">
-                <h1 data-aos="zoom-out" data-aos-once="true">
+                <h1 data-aos="zoom-in" data-aos-once="true">
                   Easy <span>way</span> to find a perfect <span>home</span>
                 </h1>
 

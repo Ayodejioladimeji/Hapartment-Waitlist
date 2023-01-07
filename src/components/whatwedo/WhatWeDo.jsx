@@ -39,7 +39,7 @@ fill vacancies faster."
         </div>
 
         <div className="what-right">
-          <img src={what} alt="" data-aos="zoom-out" data-aos-once="true" />
+          <img src={what} alt="" data-aos="fade-up" data-aos-once="true" />
         </div>
       </div>
     </div>

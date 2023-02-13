@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../../common/heading/Heading";
+// import Heading from '../../common/heading/Heading';
 
 //
 import "./Enjoy.css";
@@ -10,42 +10,43 @@ import navigation from "../../assets/navigation.svg";
 const Enjoy = () => {
   return (
     <div className="enjoy">
-      <Heading text="What you tend to enjoy" />
+      <h1 data-aos="fade-down" data-aos-once="true">
+        What you tend to enjoy
+      </h1>
 
       <div className="enjoy-center">
-        <div className="enjoy-box">
+        <div className="enjoy-box" data-aos="zoom-in" data-aos-once="true">
           <div className="enjoy-box-image blue">
             <img src={service} alt="" />
           </div>
 
-          <h3>Free Services</h3>
+          <h3>Verified Apartments</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-            facilisis sit in et ridiculus aliquam a, elit
+            Browse through a list of properties that have been verified by us
           </p>
         </div>
 
-        <div className="enjoy-box">
+        <div className="enjoy-box" data-aos="zoom-out" data-aos-once="true">
           <div className="enjoy-box-image green">
             <img src={charges} alt="" />
           </div>
 
-          <h3>No hidden charges</h3>
+          <h3>Lease Property</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-            facilisis sit in et ridiculus aliquam a, elit
+            Do you want to rent out your property? List them on Hapartment and
+            get renters knocking.
           </p>
         </div>
 
-        <div className="enjoy-box">
+        <div className="enjoy-box" data-aos="zoom-in" data-aos-once="true">
           <div className="enjoy-box-image yellow">
             <img src={navigation} alt="" />
           </div>
 
-          <h3>Easy Navigation</h3>
+          <h3>Map Locator</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-            facilisis sit in et ridiculus aliquam a, elit
+            Experience your potential apartment by viewing the address on the
+            map.
           </p>
         </div>
       </div>

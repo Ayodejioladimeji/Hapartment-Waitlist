@@ -1,0 +1,220 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.main-container {
+  animation: slideUp 0.6s ease-in-out 0.6s forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+  width: 80%;
+
+  border: 1px solid var(--primary-color);
+}
+
+.modalContainer {
+  background: var(--white-color);
+  display: flex;
+}
+
+.modal-left {
+  width: 50%;
+  background: var(--secondary-color);
+  /* padding: 20px; */
+}
+
+.modal-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* padding: 10px; */
+}
+
+.modal-right {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+
+.modal-right h3 {
+  color: var(--primary-color);
+  font-size: var(--font-mid);
+  width: 70%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.modal-right p {
+  font-size: var(--font-smallest);
+  margin-bottom: 15px;
+}
+
+.modal-right input {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 15px;
+  font-size: var(--font-mid);
+  height: 50px;
+}
+
+.modal-right button {
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 50px;
+}
+
+.modal-right button:hover {
+  background: var(--secondary-color);
+}
+
+.modal-right small {
+  font-size: var(--font-smaller);
+  margin-top: 20px;
+  display: block;
+}
+
+.cancel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: var(--font-med);
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.cancels {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: var(--font-med);
+  cursor: pointer;
+  color: var(--primary-color);
+  display: none;
+}
+
+/* ANIMATION SECTION */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  100% {
+    transform: translateY(200px);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+/* The media query */
+/* @media screen and (min-width: 1000px) {
+    .modalContainer {
+      width: 90%;
+    }
+  } */
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1500px) {
+  .main-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .main-container {
+    width: 97%;
+  }
+}
+
+@media (max-width: 950px) {
+  .modalBackground {
+    height: 120vh;
+    width: 100%;
+  }
+  .main-container {
+    width: 60%;
+  }
+  .modalContainer {
+    flex-direction: column;
+  }
+
+  .modal-left {
+    width: 100%;
+  }
+
+  .modal-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 80%;
+  }
+
+  .modal-right h3 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    width: 95%;
+  }
+  .modal-right h3 {
+    width: 90%;
+  }
+
+  .modal-right {
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  .cancel {
+    display: none;
+  }
+
+  .cancels {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  modal-right h3 {
+    width: 100%;
+  }
+}

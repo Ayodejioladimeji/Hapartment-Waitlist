@@ -1,7 +1,14 @@
 .enjoy {
-  padding: 100px 0;
-  background: var(--hero);
+  padding: 80px 0;
+  background: var(--secondary-color);
   z-index: 999;
+}
+
+.enjoy h1 {
+  color: var(--white-color);
+  font-family: "Nunito Sans";
+  font-size: var(--font-bigger);
+  text-align: center;
 }
 
 .enjoy-center {
@@ -9,14 +16,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
   margin: 100px auto;
+  padding: 0 10px;
+  flex-wrap: wrap;
 }
 
 .enjoy-box {
   width: 300px;
+  height: 300px;
   padding: 50px 15px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--white-color);
   text-align: center;
   font-weight: 500;
   border-radius: 10px;
@@ -55,8 +65,43 @@
 .enjoy-box h3 {
   margin-bottom: 15px;
   font-size: var(--font-med);
+  color: var(--white-color);
 }
 
 .enjoy-box p {
   font-size: var(--font-smallest);
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+/* THE RESPONSIVENESS */
+@media (min-width: 1240px) {
+  .enjoy {
+    padding: 80px 0;
+  }
+
+  .enjoy h1 {
+    font-size: var(--font-bigger);
+  }
+
+  .enjoy-center {
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+
+@media (max-width: 980px) {
+  .enjoy-box {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .enjoy h1 {
+    font-size: var(--font-medium);
+  }
+
+  .enjoy-box {
+    padding: 40px 10px;
+  }
 }

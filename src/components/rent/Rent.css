@@ -1,0 +1,82 @@
+.rent {
+  height: 60vh;
+  background: var(--hero);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rent h1 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.rent p {
+  color: var(--secondary-color);
+  width: 55%;
+  margin: 10px auto;
+  line-height: 30px;
+  font-size: var(--font-med);
+}
+
+.rent p span {
+  color: var(--primary-color);
+}
+
+.rent button {
+  background: var(--primary-color);
+  color: var(--white-color);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  margin-top: 15px;
+  font-size: var(--font-mid);
+  border-radius: 5px;
+}
+
+.rent button:hover {
+  background: var(--secondary-color);
+  border: 1px solid var(--white-color);
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 900px) {
+  .rent {
+    height: 80vh;
+  }
+  .rent p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .rent h1 {
+    font-size: var(--font-big);
+  }
+  .rent p {
+    width: 100%;
+    font-size: var(--smallest);
+  }
+
+  .rent button {
+    font-size: var(--font-smallest);
+  }
+}
+
+@media (max-width: 325px) {
+  .rent {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,33 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.error-center h1 {
+  font-size: var(--font-largest);
+  color: var(--primary-color);
+}
+
+.error-center h3 {
+  font-size: var(--font-larger);
+  color: red;
+}
+
+.error-center p {
+  color: var(--hero-color);
+  margin-top: 10px;
+}
+
+.error-center button {
+  background: var(--secondary-color);
+  padding: 10px 25px;
+  border: none;
+  color: var(--white-color);
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+}

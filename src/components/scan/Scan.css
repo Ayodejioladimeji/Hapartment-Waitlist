@@ -1,0 +1,160 @@
+.scan {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.scan-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-box {
+  background: var(--primary-color);
+  height: 500px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.left-box img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* right section */
+.scan-right {
+  width: 50%;
+}
+
+.scan-right h1 {
+  font-size: var(--font-biggest);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.scan-right h1 span {
+  color: var(--primary-color);
+  font-family: "Nunito Sans";
+}
+
+.scan-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.ios {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ios-image {
+  height: 100%;
+  width: 220px;
+  object-fit: contain;
+}
+
+.appstore-image {
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.android {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.android-image {
+  height: 100%;
+  width: 200px;
+  object-fit: contain;
+}
+
+.playstore-image {
+  width: 160px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* THE RESPONSIVENESS */
+@media (max-width: 900px) {
+  .scan-left {
+    justify-content: flex-start;
+  }
+
+  .scan-left {
+    width: 40%;
+  }
+
+  .left-box {
+    width: 90%;
+  }
+
+  .scan-right {
+    width: 60%;
+  }
+
+  .scan-right h1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .scan {
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 20px;
+  }
+  .scan-left {
+    display: none;
+  }
+
+  .scan-right {
+    width: 100%;
+  }
+
+  .scan-right h1 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .scan-right h1 {
+    width: 90%;
+    font-size: var(--font-medium);
+  }
+
+  .scan-center {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ios {
+    margin-bottom: 50px;
+  }
+}

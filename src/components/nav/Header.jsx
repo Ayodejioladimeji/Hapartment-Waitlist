@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // PACKAGES
-import { BiMenuAltRight } from 'react-icons/bi';
-import { FaTimesCircle } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+// import { BiMenuAltRight } from 'react-icons/bi';
+// import { FaTimesCircle } from 'react-icons/fa';
+import { Link } from "react-scroll";
 
 // IMAGES
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 // COMPONENTS
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  // const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const navigate = useNavigate();
 
   // Changing the navbar color on scroll
   const changeBackground = () => {
@@ -24,26 +26,30 @@ const Header = () => {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener("scroll", changeBackground);
 
   // THE SECTION OF THE STYLE MENU
-  const styleMenu = {
-    left: menu ? 0 : '-100%',
-  };
+  // const styleMenu = {
+  //   left: menu ? 0 : '-100%',
+  // };
 
   return (
-    <header className={navbar ? 'navbar active' : 'navbar'}>
-      <div className='logo'>
-        <Link to='/'>
-          <img src={logo} alt='logo' />
+    <header className={navbar ? "navbar active" : "navbar"}>
+      <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="logo" />
         </Link>
       </div>
 
-      <div className='menu' onClick={() => setMenu(!menu)}>
+      {/* <div className='menu' onClick={() => setMenu(!menu)}>
         <BiMenuAltRight />
-      </div>
+      </div> */}
 
-      <ul
+      <button onClick={() => navigate("/subscribe")} className="giving">
+        Get started
+      </button>
+
+      {/* <ul
         className='header-link'
         style={styleMenu}
         // onClick={() => setMenu(!menu)}
@@ -100,7 +106,7 @@ const Header = () => {
         <li onClick={() => setMenu(!menu)}>
           <FaTimesCircle className='close-menu' />
         </li>
-      </ul>
+      </ul> */}
     </header>
   );
 };
